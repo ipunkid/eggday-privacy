@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EggDay - Habit Tracker Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fffaf0;
+      --panel: #ffffff;
+      --text: #251c13;
+      --muted: #6c6258;
+      --line: #eadfce;
+      --accent: #d8871f;
+      --accent-soft: #f7dfb4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .section {
+      margin-top: 24px;
+      padding: 30px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .section:first-of-type {
+      margin-top: 0;
+    }
+
+    .lang-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #6a3f04;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .contact {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      margin-top: 4px;
+      padding: 0 16px;
+      border-radius: 8px;
+      background: var(--text);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        width: min(100% - 24px, 860px);
+        padding: 34px 0;
+      }
+
+      .section {
+        padding: 22px 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>EggDay - Habit Tracker Support</h1>
+      <p class="meta">Support for EggDay - Habit Tracker / 蛋记</p>
+      <p class="meta">Last updated: September 10, 2026</p>
+    </header>
+
+    <section class="section" lang="en">
+      <span class="lang-label">English</span>
+      <h2>Contact Support</h2>
+      <p>If you need help with EggDay - Habit Tracker, send an email to the support address below. Please include your device model, iOS or watchOS version, and a short description of the issue.</p>
+      <a class="contact" href="mailto:mail@punkid.org">mail@punkid.org</a>
+
+      <div class="grid">
+        <div class="item">
+          <h3>Data and Accounts</h3>
+          <p>EggDay - Habit Tracker does not require an account or cloud service. Check-in records and settings are stored locally on your device.</p>
+        </div>
+        <div class="item">
+          <h3>Notifications</h3>
+          <p>Daily reminders are local notifications. You can change notification permission in the iOS Settings app.</p>
+        </div>
+        <div class="item">
+          <h3>In-App Purchase</h3>
+          <p>The Landmark Pass is a one-time purchase handled by Apple App Store. Use Restore Purchase in the app if you need to restore access.</p>
+        </div>
+        <div class="item">
+          <h3>Privacy Policy</h3>
+          <p>Read the privacy policy at <a href="https://ipunkid.github.io/eggday-privacy/">https://ipunkid.github.io/eggday-privacy/</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" lang="zh-Hans">
+      <span class="lang-label">简体中文</span>
+      <h2>技术支持</h2>
+      <p>如果你在使用 EggDay - Habit Tracker（蛋记）时遇到问题，请发送邮件到 <a href="mailto:mail@punkid.org">mail@punkid.org</a>。请尽量附上设备型号、iOS 或 watchOS 版本，以及问题的简短说明。</p>
+      <p>隐私政策：<a href="https://ipunkid.github.io/eggday-privacy/">https://ipunkid.github.io/eggday-privacy/</a></p>
+    </section>
+
+    <section class="section" lang="ja">
+      <span class="lang-label">日本語</span>
+      <h2>サポート</h2>
+      <p>EggDay - Habit Tracker の利用中に問題が発生した場合は、<a href="mailto:mail@punkid.org">mail@punkid.org</a> までご連絡ください。端末モデル、iOS または watchOS のバージョン、問題の簡単な説明を添えてください。</p>
+      <p>プライバシーポリシー：<a href="https://ipunkid.github.io/eggday-privacy/">https://ipunkid.github.io/eggday-privacy/</a></p>
+    </section>
+
+    <section class="section" lang="ko">
+      <span class="lang-label">한국어</span>
+      <h2>지원</h2>
+      <p>EggDay - Habit Tracker 사용 중 문제가 있으면 <a href="mailto:mail@punkid.org">mail@punkid.org</a> 으로 문의해 주세요. 기기 모델, iOS 또는 watchOS 버전, 문제에 대한 간단한 설명을 함께 보내 주세요.</p>
+      <p>개인정보 처리방침: <a href="https://ipunkid.github.io/eggday-privacy/">https://ipunkid.github.io/eggday-privacy/</a></p>
+    </section>
+
+    <footer>
+      <p>EggDay - Habit Tracker</p>
+    </footer>
+  </main>
+</body>
+</html>
